@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  height: 700pxpx;
+  background-color: beige;
+  border: solid black 10px;
+}
+.status {
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+  border-bottom: solid black 10px;
+}
+.title {
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+}
+#game-board {
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background-color: black;
+  width: 750px;
+  height: 550px;
+}
+.pacman {
+  /* overflow: hidden; */
+  object-fit: cover;
+}
+img {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 18.32px;
+  object-fit: fill;
+  display: block;
+}
+.power-pellet {
+  background-color: whitesmoke;
+  /* border-radius: 50%; */
+  /* animation-name: blink; */
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  /* from {
+    visibility: visible;
+  } */
+  to {
+    /* visibility: hidden; */
+    background-color: black;
+  }
+}
