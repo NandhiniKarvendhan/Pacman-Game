@@ -11,16 +11,11 @@ const initGame = () => {
   pacmanX += velocityX;
   pacmanY += velocityY;
   html = `<div class="pacman" style = "grid-area : ${pacmanY}/${pacmanX}"><img src="./img/PacMan1.png" alt="pacman-img"/></div>`;
-  html += `<div style = "grid-area : 1/12"><img src="./img/red_ghost.png" alt="ghost-img"/></div>`;
-  html += `<div style = "grid-area : 8/25"><img src="./img/red_ghost.png" alt="ghost-img"/></div>`;
-  html += `<div style = "grid-area : 31/18"><img src="./img/red_ghost.png" alt="ghost-img"/></div>`;
-  html += `<div style = "grid-area : 24/9"><img src="./img/red_ghost.png" alt="ghost-img"/></div>`;
+  html += `<div class="ghost" style = "grid-area : 1/12"><img src="./img/red_ghost.png" alt="ghost-img"/></div>`;
+  html += `<div class="ghost" style = "grid-area : 8/25"><img src="./img/pink_ghost.png" alt="ghost-img"/></div>`;
+  html += `<div class="ghost" style = "grid-area : 31/18"><img src="./img/green_ghost.png" alt="ghost-img"/></div>`;
+  html += `<div class="ghost" style = "grid-area : 24/9"><img src="./img/purple_ghost.png" alt="ghost-img"/></div>`;
 
-  html += `<div class="power-pellet" style = "grid-area : 16/28"></div>`;
-  html += `<div class="power-pellet" style = "grid-area : 19/6"></div>`;
-
-  html += `<div class="power-pellet" style = "grid-area : 4/20"></div>`;
-  html += `<div class="power-pellet" style = "grid-area : 9/15"></div>`;
   gameBoard.innerHTML = html;
 };
 
