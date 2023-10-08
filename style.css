@@ -26,6 +26,7 @@ body {
 #game-board {
   display: grid;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+
   background-color: black;
   width: 750px;
   height: 550px;
@@ -34,7 +35,7 @@ body {
   /* overflow: hidden; */
   object-fit: cover;
 }
-img {
+.pacman img {
   margin: 0;
   padding: 0;
   width: 25px;
@@ -42,19 +43,24 @@ img {
   object-fit: fill;
   display: block;
 }
+.ghost img {
+  width: 25px;
+  height: 18.32px;
+}
 .power-pellet {
-  background-color: whitesmoke;
-  /* border-radius: 50%; */
-  /* animation-name: blink; */
+  animation-name: blink;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
+.power-pellet img {
+  width: 25px;
+  height: 15px;
+}
 @keyframes blink {
-  /* from {
-    visibility: visible;
-  } */
+  from {
+    opacity: 1;
+  }
   to {
-    /* visibility: hidden; */
-    background-color: black;
+    opacity: 0;
   }
 }
