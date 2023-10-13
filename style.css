@@ -32,7 +32,6 @@ body {
   height: 550px;
 }
 .pacman {
-  /* overflow: hidden; */
   object-fit: cover;
 }
 .pacman img {
@@ -42,6 +41,11 @@ body {
   height: 18.32px;
   object-fit: fill;
   display: block;
+}
+.ghost {
+  background-image: url(./img/grey_ghost.png);
+  background-repeat: no-repeat;
+  background-size: 24px 18px;
 }
 .ghost img {
   width: 25px;
