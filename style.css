@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 750px;
-  height: 700pxpx;
+  height: 720px;
   background-color: beige;
   border: solid black 10px;
 }
@@ -29,7 +29,7 @@ body {
 
   background-color: black;
   width: 750px;
-  height: 550px;
+  height: 600px;
 }
 .pacman {
   object-fit: cover;
@@ -38,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   width: 25px;
-  height: 18.32px;
+  height: 20px;
   object-fit: fill;
   display: block;
 }
@@ -48,17 +48,20 @@ body {
   background-size: 24px 18px;
 }
 .ghost img {
+  margin: 0;
+  padding: 0;
   width: 25px;
-  height: 18.32px;
+  height: 20px;
 }
-.power-pellet {
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-}
+
 .power-pellet img {
+  margin: 0;
+  padding: 0;
   width: 25px;
-  height: 15px;
+  height: 20px;
+  animation-name: blink;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
 }
 @keyframes blink {
   from {
