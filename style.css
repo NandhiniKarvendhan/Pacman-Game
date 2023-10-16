@@ -26,7 +26,6 @@ body {
 #game-board {
   display: grid;
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
-
   background-color: black;
   width: 750px;
   height: 600px;
@@ -48,15 +47,11 @@ body {
   background-size: 24px 18px;
 }
 .ghost img {
-  margin: 0;
-  padding: 0;
   width: 25px;
   height: 20px;
 }
 
 .power-pellet img {
-  margin: 0;
-  padding: 0;
   width: 25px;
   height: 20px;
   animation-name: blink;
