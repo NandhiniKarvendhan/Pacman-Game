@@ -31,6 +31,10 @@ const initGame = () => {
       ghostImage[i].style.opacity = "0";
     }
   }
+  if (pacmanX <= 0 || pacmanX > 30 || pacmanY <= 0 || pacmanY > 30) {
+    (velocityX = 0), (velocityY = 0);
+    clearInterval(game);
+  }
 };
 
 const pacmanDirection = (e) => {
@@ -52,4 +56,4 @@ const pacmanDirection = (e) => {
 };
 // To move pacman
 document.addEventListener("keydown", pacmanDirection);
-setInterval(initGame, 250);
+let game = setInterval(initGame, 250);
